@@ -1,0 +1,23 @@
+{
+  "name": "stop-watch",
+  "version": "1.0.0",
+  "description": "A simple stop watch application",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "watch",
+    "timer",
+    "stop",
+    "watch"
+  ],
+  "author": "Akinkunmi Mustapha",
+  "license": "MIT",
+  "dependencies": {
+    "ecstatic": "^4.1.4",
+    "express": "^4.17.1",
+    "music-metadata": "^7.5.0"
+  }
+}

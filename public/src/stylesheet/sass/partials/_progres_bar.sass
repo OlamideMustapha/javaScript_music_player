@@ -1,0 +1,53 @@
+@import "./layout_mixin"
+
+$slider_color: #f5f5f5
+
+input[type=range]
+  -webkit-appearance: none
+  appearance: none
+  cursor: pointer
+  background-color: $slider_color
+  color: white
+  opacity: 0.7
+  -webkit-transition: .2s
+  transition: opacity .2s
+  &:hover
+    opacity: 1
+
+
+  &::-webkit-slider-thumb
+    -webkit-appearance: none /* Override default look */
+    appearance: none
+    width: 10px /* Set a specific slider handle width */
+    height: 10px /* Slider handle height */
+    background: #494b53 /* Green background */
+    cursor: pointer /* Cursor on hover */
+    border-radius: 100px
+  &::-moz-range-thumb
+    width: 10px /* Set a specific slider handle width */
+    height: 10px /* Slider handle height */
+    background: #494b53 /* Green background */
+    cursor: pointer /* Cursor on hover */
+    border-radius: 100px
+
+
+.volume
+  width: 60px
+  height: 2px
+  align-self: center
+  outline: none
+
+.progress-bar_wrapper
+  @include layout_flex (row, space-between)
+  padding: 0px 3px
+  align-items: center
+  width: 100%
+  .current-time_text, .track-duration_text
+    font-size: 10px
+    width: 4%
+  .progress_bar
+    width: 90%
+    height: 3px
+    margin: 0px 8px
+    // margin-right: 5px
+    outline: none
